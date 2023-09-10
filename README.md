@@ -1,2 +1,2 @@
-# uTelgram-Bot
+# uTelgram-Bot IoT
 home automation with (Arduino/Telegram/MicroPython)
