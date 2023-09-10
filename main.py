@@ -19,7 +19,9 @@ def flanco_subida(Boton):  ## only for the use of buttons <activation edge for b
     else:
       Boton["contador"] = 0
 
+
 #Connect arduino to wifi
+####################
 def connectar_Wifi(p_xarxa, p_nom_wifi, p_password):
      if not p_xarxa.isconnected():              
          p_xarxa.active(True)                    
@@ -44,7 +46,7 @@ def connectar_xarxa():
         else:
              print("No és possible connectar amb el punt d'accés")
     return _xarxa
-####
+####################
     
 
 TOKEN = '<INSERT TELEGRAMS BOT TOKEN>'
