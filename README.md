@@ -1,7 +1,7 @@
 # uTelgram-Bot
 home automation with (Arduino/Telegram/MicroPython)
 
-With this project you will be able to connect any device in your home and remotely moanage it via telegram with telegram bots+arduino+programming !!
+With this project you will be able to connect any device in your home and remotely manage it via telegram with telegram bots+arduino+programming !!
 
 In the Main file you will find an example of use featuring lights and buttons to play with (Feel free to recreate the scenary to check everything)
 
@@ -17,7 +17,11 @@ In the Main file you will find an example of use featuring lights and buttons to
       - Ready to go!
 
 
-@@@@
+
+
+
+
+#########
 Using custom keyboards
 You can define custom keyboards to send with a reply
 
@@ -35,4 +39,4 @@ def show(update):
     update.reply('here it is!', reply_markup=reply_keyboard)
 
 
-@@@@@ via --> https://github.com/gabrielebarola/telegram-upy
+######### (custom keyboards via --> https://github.com/gabrielebarola/telegram-upy)
