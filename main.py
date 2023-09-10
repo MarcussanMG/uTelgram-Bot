@@ -44,7 +44,7 @@ def connectar_xarxa():
              print("Conexion Stablished")
              print('Conexion data (IP/netmask/gw/DNS):', _xarxa.ifconfig())
         else:
-             print("No és possible connectar amb el punt d'accés")
+             print("Unable to connecto to network")
     return _xarxa
 ####################
     
