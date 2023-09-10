@@ -6,7 +6,7 @@ import time
 import os
 
 
-def flanco_subida(Boton):
+def flanco_subida(Boton):  ## only for the use of buttons <activation edge for buttons>
     boton = Boton["boton"]
    
    
@@ -64,7 +64,7 @@ keyboard = [
         ]
 replyKeyboard = ReplyKeyboardMarkup(keyboard)
 
-
+### Check the "Main" file for more information in how to modify the keyboard
 
 
 
