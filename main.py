@@ -38,20 +38,24 @@ def connectar_xarxa():
     if not _xarxa.isconnected():
         _nom_wifi = "<INSERT WIFI'S SSID>"
         _psw_wifi = "<INSERT WIFI PASSWORD>"
-        print('connectant amb la xarxa Wifi ({})'.format(_nom_wifi))
+        print('Connecting to WIFI: ({})'.format(_nom_wifi))
         connectar_Wifi(_xarxa, _nom_wifi, _psw_wifi)
         if _xarxa.isconnected():
              print("Conexion Stablished")
              print('Conexion data (IP/netmask/gw/DNS):', _xarxa.ifconfig())
         else:
-             print("Unable to connecto to network")
+             print("Unable to stablish connection")
     return _xarxa
 ####################
     
 
 TOKEN = '<INSERT TELEGRAMS BOT TOKEN>'
-
 bot = Bot(TOKEN, connectar_xarxa)
+
+
+
+##### MY EXAMPLE
+
 Led = Pin(<Insert LED Pin number>, Pin.OUT, value=0)
 alarma = Pin(<ALARM PIN>, Pin.OUT, value=0)
 
@@ -96,7 +100,7 @@ xarxa = connectar_xarxa()
 bot.start_loop()
 
 
-while True:
+while True: ## You need this while true or the program will finish
     flanco_subida(Bonton_Amarillo)
-    if Bonton_Amarillo["flanco"] == True:
-        Bonton_Amarillo["flanco"] = False
+    if Bonton_Amarillo["flanco"] == True: # Cheching if button was pressed
+        Bonton_Amarillo["flanco"] = False  
